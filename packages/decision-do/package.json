@@ -1,0 +1,18 @@
+{
+  "name": "decision-do",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "wrangler dev --local",
+    "staging": "wrangler publish --env staging",
+    "prod": "wrangler publish --env prod",
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.0.3",
+    "jest": "^27.4.5",
+    "jest-cli": "^27.4.5",
+    "ts-jest": "^27.0.0",
+    "wrangler": "^2.13.0"
+  }
+}

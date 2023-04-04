@@ -1,0 +1,14 @@
+name = "decision-do-dev"
+main = "src/index.ts"
+compatibility_date = "2023-03-27"
+compatibility_flags = ["durable_object_alarms"]
+
+[env.staging]
+name = "decision-do-staging"
+
+[env.prod]
+name = "decision-do-prod"
+
+[[migrations]]
+tag = "v1"
+new_classes = ["DecisionDO"]
